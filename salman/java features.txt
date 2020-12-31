@@ -1,0 +1,16 @@
+features of java programming:
+=============================
+
+	1) oops support
+	2) secure
+	3) inheritance
+	4) interface
+	5) Thread & multithread
+	6) both compiler and interpreter
+	7) Exception handling
+	8) platform independent
+	9) portable
+	10) robust --> error check both compile
+			& run time.
+	11) dynamic
+	12) High performance ( JIT compiler) 

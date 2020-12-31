@@ -1,0 +1,68 @@
+User Interface:
+==========
+	def: window based GUI Application.
+
+	controls :
+		TextField,PasswordField, Label,Button,List,Chice,Combobox,.......
+
+
+	use:
+   	        --> light weight (fast execution)
+	
+	headerfile:
+	
+		import javax.swing.*;
+
+	* -->JFrame,JTextField , JLabel, JButton, JList,JCombobox,.....
+	        (inbuilt class--> james gosling)
+
+
+	class classname extends JFrame
+	{
+	 classname()
+	{	                 
+	// swing code (JTextField JButton,....
+	}	
+	}
+	
+	class mainclass
+	{
+		public static void main(String args[])
+		{
+		JFrame   f1=new classname();	
+		f1.setSize(500,600);
+		f1.setResizable(false);
+		f1.show();
+		}
+	}       
+
+	
+Layout Manager:
+==========
+
+	def: to place controls proper position.
+
+
+syntax:
+	setLayout(layoutname);
+
+layoutname:
+	null --> absolute position
+	BorderLayout --> outside only
+	GridLayout     --> row , column
+	FlowLayout    --> horizontal ---> end ---> next line
+
+
+syntax: (absolute)
+===============
+
+t1.setBounds(xpos, ypos, width,height);
+b1.setBounds(xpos, ypos, width, height);
+
+t1.setBounds(100,200,50,30);
+
+
+
+
+
+	

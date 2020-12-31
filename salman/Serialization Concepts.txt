@@ -1,0 +1,81 @@
+Serialization in Java is a mechanism of writing the state of an object into a byte-stream. It is mainly used in Hibernate, RMI, JPA, EJB and JMS technologies.
+
+The reverse operation of serialization is called deserialization where byte-stream is converted into an object. The serialization and deserialization process is platform-independent, it means you can serialize an object in a platform and deserialize in different platform.
+
+For serializing the object, we call the writeObject() method ObjectOutputStream, and for deserialization we call the readObject() method of ObjectInputStream class.
+
+We must have to implement the Serializable interface for serializing the object.
+
+Advantages of Java Serialization
+It is mainly used to travel object's state on the network (which is known as marshaling).
+
+
+serialization program:
+
+import java.io.Serializable;  
+public class Student implements Serializable{  
+ int id;  
+ String name;  
+ public Student(int id, String name) {  
+  this.id = id;  
+  this.name = name;  
+ }  
+}  
+
+import java.io.*;  
+class Persist{  
+ public static void main(String args[]){  
+  try{  
+  //Creating the object  
+  Student s1 =new Student(211,"gowthaman");  
+  //Creating stream and writing the object  
+  FileOutputStream fout=new FileOutputStream("f.txt");  
+  ObjectOutputStream out=new ObjectOutputStream(fout);  
+  out.writeObject(s1);  
+  out.flush();  
+  //closing the stream  
+  out.close();  
+  System.out.println("success");  
+  }catch(Exception e){System.out.println(e);}  
+ }  
+}  
+
+deserialization:
+import java.io.*;  
+class Depersist{  
+ public static void main(String args[]){  
+  try{  
+  //Creating stream to read the object  
+  ObjectInputStream in=new ObjectInputStream(new FileInputStream("f.txt"));  
+  Student s=(Student)in.readObject();  
+  //printing the data of the serialized object  
+  System.out.println(s.id+" "+s.name);  
+  //closing the stream  
+  in.close();  
+  }catch(Exception e){System.out.println(e);}  
+ }  
+}  
+
+JVM has divided memory space between two parts one is Stack and another one is Heap space. Stack space is mainly used for storing order of method execution and local variables.
+
+Stack always stored blocks in LIFO order whereas heap memory used dynamic allocation for allocating and deallocating memory blocks. 
+
+Memory allocated to the heap lives until one of the following events occurs :
+
+Program terminated 
+Memory free 
+In contrast, the memory allocated to stack lives until the function returns. Below are the differences.
+
+Sr. No.	Key	Stack	Heap Memory
+1
+Basic
+Stack memory is used to store items which have a very short life like local variables, a reference variable of objects 
+Heap memory is allocated to store objects and JRE classes.
+2
+Ordering 
+The stack is always reserved in a LIFO (last in first out) order
+Heap memory is dynamic allocation there is no fixed pattern for allocating and deallocating blocks in memory 
+3
+Visibility 
+Variables are visible to only to owner thread 
+It is visible to all threads 

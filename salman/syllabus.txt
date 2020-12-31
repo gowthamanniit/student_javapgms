@@ -1,0 +1,40 @@
+java syllabus:
+==============
+	1) introduction
+	2) building blocks of java program
+	   class , objects, datatypes, class members,
+           access specifier,access modifier,inner        	   class,methods with args) , packages
+	3) how to get value at run time?
+	4) constructor 
+	5) conditional constructs(if,if else if elseif,
+			nested if, switch)
+	6)looping statement (for, while, do..while
+			  nested loop)
+		or
+	    iteration.
+	7) arrays, enum, string function,String Buffer.
+
+	8) inheritance(single,multilevel,hierarchical)
+           interface (multiple)
+	9) polimorphism
+	10) exception handling
+	11) type casting, object casting
+	13) localization.
+	    (date,time,currency,text)
+	14) regular expression
+	15) generic class and methods
+	16) collection (set,list,map,deque)
+	17) Thead,Multithread
+	18) File concepts (paragraph format or unstructure format)
+	19) database (mssql server )
+	20) swing (textbox,label,button,checkbox,list)
+	    (GUI-graphical user interface)
+	21) mini project.
+
+
+
+	
+	
+	
+	
+	

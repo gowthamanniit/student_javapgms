@@ -1,0 +1,51 @@
+
+	1991 first introduced by sun micro system.
+	name : james gosling
+	starting name : oak's language
+	1995 renamed java.
+	
+	java is a platform independent language.
+	world no.2 language.(2020)
+
+	java is a case sensitive language.
+
+	java is a both compiler and interpreter.
+		   
+	compiler: whole program error check.
+		 it shows all the error with line no.
+		 (code)
+	interpreter: line by line error check.
+		 it shows only one error.
+		 (runtime)
+
+	java extension: .java
+
+	java strongly type checked language.
+
+	int a=40000;
+
+	java support oops.
+
+	java has two parts:
+	
+		1) console  (command prompt) same c,c++
+		2) GUI	- window based	
+	editor:
+	=======
+	1.notepad + command prompt
+	2.eclipse(IDE-Integrated development environment)
+
+	how to check java your system installed or not?	
+
+	c:/program files/java/jdk1.8.0_251/bin
+
+
+
+
+	
+
+	
+
+	
+
+

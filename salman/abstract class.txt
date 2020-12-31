@@ -1,0 +1,30 @@
+abstract class:
+=========
+	set of complete and incomplete methods.
+
+  void dis()  // complete
+  {
+
+  }
+ void dis();  // incomplete
+
+rule:
+          we can't create object to abstract class.
+          only we can use in inheritance	
+          we can declare or  define var
+          incomplete method must use in derive class.
+purpose:
+	override purpose
+
+syntax:
+	abstract class classname
+	{
+		incomplete method();
+		ex:
+		abstract void display();  // must use in dervie class.
+		void dis()
+		{
+
+		}
+	}
+

@@ -1,0 +1,21 @@
+event Handling:
+==========
+import java.awt.event.*;
+*:
+   class	 	interface       controls
+   ActionEvent  - ActionListener   (JButton)
+   ItemEvent    - ItemListener     (JComboBox)
+   KeyEvent     - KeyListener      (JTextField)
+   MouseEvent - MouseListener   (any)
+   FocusEvent  - FocusListener    (any)
+   
+	
+class classname extends JFrame implements ActionListener
+{
+butobj.addActionListener(this);
+public void actionPerformed(ActionEvent obj)
+{
+  ...button click
+}
+}
+   

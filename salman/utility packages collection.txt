@@ -1,0 +1,50 @@
+
+utility packages:
+=============
+
+import java.util.*;
+
+*:
+	Scanner
+              Date
+	Time
+
+Collection:
+	def: collection of elements
+	(already built in package)
+import java.util.HashSet;
+	
+	syntax
+	HashSet<datatype> obj=new HashSet<datatype>();
+		<Integer>
+		<Float>
+		<Double>
+		<String>
+	rules:
+		unique data only.
+		random order
+		null accept but only one time
+	
+import java.util.TreeSet;
+	syntax:
+	TreeSet<datatype> obj=new TreeSet<data>();
+	
+	rules:
+		unique data only
+		ascending order
+		null not accept
+
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Vector;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.Hashtable;
+import java.util.ArrayDeque;
+              4 types
+	  set  - HashSet, TreeSet
+	  list  - ArrayList,LinkedList,Vector
+	  map - HashMap,TreeMap,Hashtable
+	  deque - ArrayDeque
+	

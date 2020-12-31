@@ -1,0 +1,68 @@
+java datatypes:
+===============
+
+	numbers:(4 types)
+
+	- byte - 1 byte  - 8 bits
+		2^8 = 256 (-128 to 127)
+		
+	- short- 2 bytes - 16 bits
+		2^16= 65536 (-32768 to  32767)
+	
+		- int  - 4 bytes - 32
+	- 2^32= (4294967296)
+		(-2147483648 to 2147483647)
+
+	- long - 8 bytes - 64	
+	  2^64=18,446,744,073,709,551,616
+	(-9223372036854775808 to 9223372036854775807)
+
+decimal places:
+
+	1) float: - 4 bytes - decimal place 8 
+	2) double - 8 bytes - decimal places 17
+
+all text(number+a-z+A-Z+special char)
+=====================================
+	1) char   -- only one letter from keyboard
+		(2 bytes)
+	ex:
+	char v='A';
+	char v1=' ';
+	char v2='1';
+	char v3='@';
+
+	2) String -- o or more 
+		(java Built in class)
+
+	ex:
+	String t="salman";
+	String t="salman123";
+	String t="salman123@$#@@$@#@$$@#42";
+	String t="";
+
+4) boolean
+	1 bit (true or false)
+	
+	ex:
+	boolean v=true;
+	boolean v1=false;
+	boolean v2=(34>20);
+	boolean v3=(20!=20);
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+		
+			
+		

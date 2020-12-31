@@ -1,0 +1,47 @@
+	java + sql server connection
+	==================
+
+	step 1:
+		sql conficuration manager
+		-->sqlserver + sqlserverbrowser -->running
+		--> tcp/ip -->enabled
+	step 2:
+		sql server management studio
+		database + table + 3 values
+	step 3:
+		download    sqljdbc-4.2.jar(driver)
+			   java + sqlserver
+	step 4:
+     
+	how to add sqljdbc-4.2.jar file in eclipse?
+		
+		projectname-->right click--> properties-->  java buid path-->libraries -->add external javr -->select the jar file -->open
+	-->apply and close
+
+Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
+	step 5:	import java.sql.*;
+		connection --> java + sql connection
+
+		*) -->Connection + DriverManager
+
+  Connection con=DriverManager.getConnection("path", "user", "pass");
+
+		   --> Statement
+		to add sql query
+
+		Statement st=con.createStatement();
+		   --> ResultSet
+		to store all data from sql server
+
+	ResultSet rs=st.executeQuery("select * from tablename");
+
+
+			
+
+		
+
+
+
+
+		                

@@ -1,0 +1,84 @@
+Java Networking:
+===========
+	def:  communication b/w server and client.
+		data sharing.
+header file:
+	import java.net.*;
+
+server:
+	only one or two.
+	answer --> response
+	1) receive+ 2)send	
+client:
+	many
+	question (send) -->request 
+	- client must know about the server ip address.
+	- port number
+
+methods:
+======
+	ServerSocket(only server) -->we can give only port number
+
+	syntax:
+
+	ServerSocket ss=new ServerSocket(portnumber);
+ex:
+	ServerSocket ss=new ServerSocket(6666);
+
+	Socket s=ss.accept(); 
+// only one method available in serverscocket(accept)
+
+Socket:(both server & client)
+=====
+	public InputStream getInputStream();-->server (read)
+	public OutputStream getOutputStream(); --> client (write)
+
+	
+	use client:
+	Socket -->we can give ipaddrees & port number
+
+	Socket s=new Socket("server ip address",portnumer);
+	ex:
+	Socket s=new Socket("localhost",6666);
+	localhost: same computer
+
+how to find ip address in java?
+====================
+
+	import java.net.*;
+
+	classname: InetAddress
+
+	method: getLocalHost()
+
+package Folder3_File;
+
+
+import java.net.InetAddress;
+
+public class FindIP {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+
+		InetAddress ip=InetAddress.getLocalHost();
+		System.out.println("my ip:"+ip);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+	
+	

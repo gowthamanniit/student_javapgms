@@ -1,0 +1,35 @@
+serialization 
+=======
+	convert object into byte-stream.
+
+adv:
+	only network sharing.
+
+package:
+	import java.io.Serializable;
+
+Serializable --> inbuilt java interface.
+	        (no member + method)
+
+serialization: object to bytestream
+=======================
+File f=new File("d:/filename.txt");
+FileOutputStream fos=new FileOutputStream(f);
+ObjectOutputStream oos=new ObjectOutputStream(fos);
+oos.writeObject(classname obj);
+syntax:
+class classname implements Serializable
+{
+ int id;
+ String name;
+}
+======================================
+deserialization : bytestream to object
+		
+
+		File f=new File("e:/store.txt");
+		FileInputStream  fis=new FileInputStream(f);
+	ObjectInputStream ois=new ObjectInputStream(fis);
+		Stud s2=(Stud)ois.readObject();
+
+		
